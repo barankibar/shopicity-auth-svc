@@ -3,6 +3,7 @@ module github.com/barankibar/shopicity-auth-svc
 go 1.20
 
 require (
+	github.com/golang-jwt/jwt v3.2.2+incompatible
 	github.com/spf13/viper v1.16.0
 	google.golang.org/grpc v1.57.0
 	google.golang.org/protobuf v1.30.0
