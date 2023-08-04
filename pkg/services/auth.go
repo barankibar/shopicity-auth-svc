@@ -62,7 +62,7 @@ func (s *Server) Login(ctx context.Context, req *pb.LoginRequest) (*pb.LoginResp
 	}, nil
 }
 
-func (s *Server) Valiate(ctx context.Context, req *pb.ValidateRequest) (*pb.ValidateResponse, error) {
+func (s *Server) Validate(ctx context.Context, req *pb.ValidateRequest) (*pb.ValidateResponse, error) {
 	claims, err := s.Jwt.ValidateToken(req.Token)
 	if err != nil {
 		return &pb.ValidateResponse{
