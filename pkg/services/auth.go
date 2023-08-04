@@ -13,6 +13,7 @@ import (
 type Server struct {
 	H   db.Handler
 	Jwt utils.JwtWrapper
+	pb.UnimplementedAuthServiceServer
 }
 
 func (s *Server) Register(ctx context.Context, req *pb.RegisterRequest) (*pb.RegisterResponse, error) {
